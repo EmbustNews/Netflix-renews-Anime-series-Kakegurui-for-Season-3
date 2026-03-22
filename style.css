@@ -1,0 +1,90 @@
+body {
+  margin: 20px;
+}
+
+h1, .paragraf {
+    max-width: 600px; /* ajusta el tamaño a tu gusto */
+}
+
+.info {
+    font-size: 12.5px;
+    color: gray;
+    display: flex;
+    align-items: left;
+    margin-bottom: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.paragraf {
+  margin-top: 0px;
+}
+
+.share {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid #6401E5;
+    background-color: #fff;
+    cursor: pointer;
+
+    display: grid;
+    place-items: center;
+
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    
+    padding: 0; /* evita espacios raros */
+}
+
+/* Imagen dentro del botón */
+.share img {
+    width: 25px;
+    height: 25px;
+    pointer-events: none; /* evita bugs al hacer clic */
+}
+
+/* Hover y focus */
+.share:hover,
+.share:focus-visible {
+    background-color: #f4f3f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Quitar borde feo por defecto en algunos navegadores */
+.share:focus {
+    outline: none;
+}
+
+/* 👇 Estilo básico del menú */
+#share-menu {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    
+    list-style: none;
+    padding: 8px 0;
+    margin: 0;
+    
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    width: 200px;
+}
+
+/* Items del menú */
+#share-menu li {
+    padding: 10px 16px;
+    cursor: pointer;
+}
+
+#share-menu li:hover {
+    background-color: #f4f3f0;
+}
+img {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin-top: 10px;
+}
