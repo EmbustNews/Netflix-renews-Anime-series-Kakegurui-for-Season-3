@@ -1,0 +1,69 @@
+body {
+  margin: 20px;
+}
+
+h1, .paragraf {
+    max-width: 94%; /* ajusta el tamaño a tu gusto */
+}
+
+.info {
+    font-size: 12.5px;
+    color: gray;
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.paragraf {
+  margin-top: 0px;
+}
+
+.share {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1.5px solid #6401E5;
+    background-color: #fff;
+    cursor: pointer;
+
+    display: grid;
+    place-items: center;
+
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    
+    padding: 0; /* evita espacios raros */
+}
+
+/* Imagen dentro del botón */
+.share img {
+    width: 25px;
+    height: 25px;
+    pointer-events: none; /* evita bugs al hacer clic */
+}
+
+/* Hover y focus */
+.share:hover,
+.share:focus-visible {
+    background-color: #f4f3f0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+/* Quitar borde feo por defecto en algunos navegadores */
+.share:focus {
+    outline: none;
+
+}
+
+img.main-image {
+    max-width: 100%;
+    display: block;     
+    margin: 10px 0 10px 0; 
+}
+
+img.sec-image {
+    max-width: 100%;
+    display: block;
+    margin-top: 10px;
+}
